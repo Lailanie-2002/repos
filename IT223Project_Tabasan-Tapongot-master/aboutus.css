@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Duepuntozero';
+    src: url('duepuntozero-font/Duepuntozero-BPgl.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'DuepuntozeroBlack';
+    src: url('duepuntozero-font/DuepuntozeroBlack-8YKB.ttf') format('truetype');
+  }
+  
+
+  .boldfont {
+    font-family: 'DuepuntozeroBlack';
+    text-transform: uppercase;
+    color:#bea93e;
+    font-size: 5rem;
+
+}
+.blogfont {
+    font-family: 'Duepuntozero', sans-serif;
+    font-size: larger;
+    color:#bea93e;
+}
+
+.titlefont {
+    font-family: 'DuepuntozeroBlack';
+    text-transform: uppercase;
+    color:#bea93e;
+    font-size: 5rem;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    transform: translateY(280%);
+
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    transform: translateY(70%);
+    padding: 5px;
+
+  }
+  
+  .developer {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  .developer:last-child {
+    margin-right: 0;
+  }
+  
+  .image-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .developer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .info {
+    flex-grow: 10;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .job-title {
+    font-style: italic;
+    color: #888;
+    margin: 0;
+    font-size: 15px;
+    
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size:15px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+  
+    .developer {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+    

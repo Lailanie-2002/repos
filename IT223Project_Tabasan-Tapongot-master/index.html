@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/SereniteaLogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Serenitea - Make Tea, Not War</title>
+    <script src="index.js" defer></script>
+    <script src="addtocart.js"></script>
+    <script src="https://kit.fontawesome.com/2dfceffc7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoholder">
+            <a href="#aboutus" class="logo">
+                <img src="images/SereniteaLogo.png" alt="" width="50px">
+                <img id="logoname" src="images/namefornavbar.png" alt="" width="200px">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#featured">Featured</a>
+            <a href="#menu">Menu</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contactus">Contact Us</a>
+        </nav>
+
+        <!-- Icons For Navbar -->
+        <div class="icons">
+            <div class="fas fa-magnifying-glass fa-fade" id="search-btn"></div>
+            <div class="fas fa-user" id="user-btn"></div>
+            <div class="fas fa-shopping-cart fa-bounce" id="cart-btn"></div>
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="navsearch">
+            <input type="search" id="search-box" placeholder="Search Here">
+        </div>
+
+        <div class="cart-items-container">
+
+            <div class="cart-wrapper">
+               <!--  <div class="cart-items">
+                    <span class="fas fa-times"></span>
+                    <img src="/images/product1-redvelvet.jpg" alt="" />
+                    <div class="content">
+                        <h3 class="item-name">Red Velvet Milktea</h3>
+                        <div class="price">₱100.00</div>
+                        <div class="item-quantity">Quantity:</div>
+                    </div>
+                </div>  -->
+
+            </div>
+
+            <div class="cart-total">Total:</div>
+
+             <div class="checkout">
+                    <a class="checkout_btn" onclick="return false;">Check Out</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Home Page -->
+
+    <!-- Home Revision  -->
+    <section class="home" id="home">
+        <div class="homecontent">
+            <video id="videoloop" autoplay loop muted>
+                <source src="videos/videoloop.mp4" type="video/mp4">
+            </video>
+            
+            <div class="homedetails">
+                <!-- <br> -->
+                <h3 id="discoverhead"><b><span class="boldfont">Experience Serenitea: A moment of peace with each cup.</span></b></h3>
+                <br>
+                <p id="discover">Discover a world of exquisite milk teas, refreshing beverages, and delectable snacks. Indulge your senses and experience true tranquility with every sip and bite. Explore our menu and embark on a journey of taste and serenity.</p>
+                <a href="#aboutus" class="btn" id="learnmorebtn">Learn More</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Original
+    <section class="home" id="home">
+        <div class="homecontent">
+            <video id="videoloop" autoplay loop muted>
+                <source src="videos/videoloop.mp4" type="video/mp4">
+              </video>
+            <div class="homedetails">
+                <br>
+                <h5>Experience Serenitea: A moment of peace with each cup.</h5>
+                <p>Discover a world of exquisite milk teas, refreshing beverages, and delectable snacks. Indulge your senses and experience true tranquility with every sip and bite. Explore our menu and embark on a journey of taste and serenity.</p>
+                <a href="#aboutus" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- About Us -->
+    <section class="aboutus" id="aboutus">
+        <div><img id="image-side" src="images/cup.png" alt="Serenitea Logo"></div>
+        <div id="text-side">
+            <div id="aboutusheader"><h2><span class="boldfont">About Us</span></h2></div>
+            <br>
+            <h3 id="maketeanotwar"><span class="boldfont-minor">Make Tea, not War</span></h3>
+            <p>
+                Welcome to Serenitea, where we believe in the power of tea to bring people
+                together and create moments of serenity in our fast-paced lives. Our passion
+                for tea has inspired us to create a variety of delicious milk tea blends that
+                are made with high-quality ingredients and served with love.
+            </p>
+            <br>
+            <p>
+                At Serenitea, we understand that life can be hectic, but we believe that taking
+                a few moments to enjoy a cup of tea can help bring balance and peace to your day.
+                Our mission is to provide a sanctuary where you can escape the chaos and stress
+                of daily life and find a moment of tranquility.
+            </p>
+            <br>
+            <p>
+                So come join us at Serenitea and Make Tea, Not War. Let's create moments of peace,
+                serenity, and happiness together, one cup at a time.
+            </p>
+            <br>
+            <a href="aboutus.html" target="_blank" class="btn" id="aboutusbtn">See More</a>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="featured" id="featured">
+        <div class="title">
+            <h3><span class="boldfont">Featured Products</span></h3>
+        </div>
+
+        <!-- <div class="featurebox" style="align-items: center;"></div> -->
+
+        <div class="featurecontent">
+            <div class="card featuredcontainer1">
+                <img id="featured1" src="images/featured1.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:15px">">What's New</h3>
+                    <a href="#menu" class="featurebtn">Order Now!</a>
+                </div>
+            </div>
+
+            <div class="card featuredcontainer2">
+                <img id="featured2" src="images/featured2.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:8px">Best Sellers</h3>
+                    <a href="#menu" class="featurebtn">Order Now!</a>
+                </div>
+            </div>
+
+            <div class="card featuredcontainer3">
+                <img id="featured3" src="images/featured3.jpg" alt="" height="220px">
+                <div class="featuredetails">
+                    <h3 style="margin-bottom:8px">On Sale</h3>
+                    <a href="#menu" class="featurebtn">Order Now!</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+            <div class="title">
+                <h3><span class="boldfont">Menu Page</span></h3>
+            </div>
+
+            <div class="menucontent">
+                <div class="card productcontainer1" id="item1">
+                    <img id="product 1" src="images/product1-redvelvet.jpg" alt="Red Velvet" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Red Velvet Milktea</h3>
+                        <p>Savor the velvety allure of Red Velvet Milk Tea – a blissful fusion of tea and indulgent sweetness.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱100.00  <span style="font-size:13px; text-decoration: line-through; color: red;">150.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Red Velvet Milktea', 'images/product1-redvelvet.jpg', '₱100.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>  
+
+                <div class="card productcontainer2" id="item2">
+                    <img id="product 2" src="images/product2-strawberry.png" alt="Strawberry" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Strawberry Cheesecake Milktea</h3>
+                        <p>Delight in every sip of our Strawberry Cheesecake Milk Tea—a heavenly blend of fruity and creamy perfection."</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱200.00  <span style="font-size:13px; text-decoration: line-through; color: red;">250.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Strawberry Cheesecake Milktea', 'images/product2-strawberry.png', '₱200.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer3" id="item3">
+                    <img id="product 3" src="images/product3-wintermelon.png" alt="Wintermelon" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Wintermelon Milktea</h3>
+                        <p>Sip into bliss with our Wintermelon Milk Tea- creamy, cool, & simply irresistible. Experience pure refreshment!</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱99.00  <span style="font-size:13px; text-decoration: line-through; color: red;">120.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Wintermelon Milktea', 'images/product3-wintermelon.png', '₱99.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer4" id="item4">
+                    <img id="product 4" src="images/product4-darkchocolate.jpg" alt="Dark Chocolate" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Dark Chocolate Milktea</h3>
+                        <p>Immerse yourself in pure choco bliss with our Dark Chocolate Milk Tea - a rich and irresistible treat.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱150.00  <span style="font-size:13px; text-decoration: line-through; color: red;">180.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Dark Chocolate Milktea', 'images/product4-darkchocolate.jpg', '₱150.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer5" id="item5">
+                    <img id="product 5" src="images/product5-okinawa.png" alt="Okinawa" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Okinawa Milktea</h3>
+                        <p>Embrace the irresistible charm of Okinawa Milk Tea—a uniquely delicious blend of rich flavor.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱100.00  <span style="font-size:13px; text-decoration: line-through; color: red;">130.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Okinawa Milktea', 'images/product5-okinawa.png', '₱100.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer6" id="item6">
+                    <img id="product 6" src="images/product6-matcha.jpg" alt="Matcha" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Matcha Milktea</h3>
+                        <p>Elevate your taste buds with our luscious Matcha Milk Tea—an invigorating blend of vibrant flavors.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱160.00  <span style="font-size:13px; text-decoration: line-through; color: red;">180.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Matcha Milktea', 'images/product6-matcha.jpg', '₱160.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer7" id="item7">
+                    <img id="product 7" src="images/product7-thai.jpg" alt="Thai" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Thai Milktea</h3>
+                        <p>Experience our special Thai Milk Tea—a creamy blend of aromatic spices and indulgent sweetness.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱120.00  <span style="font-size:13px; text-decoration: line-through; color: red;">150.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Thai Milktea', 'images/product7-thai.jpg', '₱120.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer8" id="item8">
+                    <img id="product 8" src="images/product8-brownsugar.png" alt="Brown Sugar" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Brown Sugar Milktea</h3>
+                        <p>Savor the perfect blend of richness and sweetness in our Brown Sugar Milk Tea—a cozy indulgence.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱99.00  <span style="font-size:13px; text-decoration: line-through; color: red;">120.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Brown Sugar Milktea', 'images/product8-brownsugar.png', '₱90.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer9" id="item9">
+                    <img id="product 9" src="images/product9-greenapple.jpg" alt="Green Apple" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Green Apple Fruit Tea</h3>
+                        <p>Indulge in the crisp and tangy flavors of our Green Apple Fruit Tea—a blend of refreshment. </p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱130.00  <span style="font-size:13px; text-decoration: line-through; color: red;">160.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Green Apple Fruit Tea', 'images/product9-greenapple.jpg', '₱130.00');return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer10" id="item10">
+                    <img id="product 10" src="images/product10-taro.png" alt="Taro" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Taro Milktea</h3>
+                        <p>Delight in the smooth richness of our Taro Milk Tea—a luscious fusion of earthy flavors and creamy bliss.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱100.00  <span style="font-size:13px; text-decoration: line-through; color: red;">150.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Taro Milktea', 'images/product10-taro.png', '₱100.00');return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer11" id="item11">
+                    <img id="product 11" src="images/product11-watermelon.png" alt="Watermelon" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Watermelon Milktea</h3>
+                        <p>Quench your thirst with our Watermelon Milk Tea—a refreshing fusion of fruity sweetness and creamy indulgence.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱100.00  <span style="font-size:13px; text-decoration: line-through; color: red;">130.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Watermelon Milktea', 'images/product11-watermelon.png', '₱100.00'); return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+
+                <div class="card productcontainer12" id="item12">
+                    <img id="product 12" src="images/product12-cantalope.jpg" alt="Cantaloupe" height="120px">
+                    <div class="productdetails">
+                        <h3 style="margin-bottom:8px; text-align: center;">Cantaloupe Fruit Tea</h3>
+                        <p>Delight in the tropical bliss of our Cantaloupe Fruit Tea—a refreshing infusion of sweet and floral flavors.</p>
+                        <div class="prices_btn"></div>
+                            <h4 style="font-size: 1.8rem;">₱110.00  <span style="font-size:13px; text-decoration: line-through; color: red;">150.00</span></h4>
+                            <a class="addtocartbtn" onclick="addToCart('Cantaloupe Fruit Tea', 'images/product12-cantalope.jpg', '₱110.00');return false; changeText();">Add To Cart</a>
+                        </div>
+                </div>
+            </div>
+
+         
+    </section>
+
+    <section class="blogs" id="blogs">
+        <div class="title">
+            <h3><span class="boldfont">Blogs</span></h3>
+        </div>
+        <div class="blogcontent">
+            <div class="frame blog1">
+                <div class="blogdetails">
+                    <h2><span class="blogfont">READY FOR THE TEA?</span></h2>
+                    <p>Exciting News: New Flavors Unleashed! Brace yourself for an explosion of taste as we unveil our latest milk tea creations. From tantalizing fruit infusions to indulgent dessert-inspired blends, these flavors will take your palate on an unforgettable adventure. Don't miss out—click to read more and be the first to savor these sensational concoctions!</p>
+                    <a href="https://www.instagram.com/p/CHwkcWWhRru/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" class="blogbtn">Read More</a>
+                </div>
+    
+                <img id="img blog1" src="images/brewingsoon.png">
+
+            </div>
+
+            <div class="frame blog2">
+                <div class="blogdetails">
+                    <h2><span class="blogfont">Tea Unveiled: Your Essential Guide to the World of Tea</span></h2>
+                    <p>Unlock the Secrets of Tea! Journey through the enchanting world of tea as we unveil its diverse varieties, ancient traditions, and health benefits. From delicate white teas to robust black brews, expand your knowledge and elevate your tea experience. Click to read more and embark on an extraordinary tea adventure!</p>
+                    <a href="https://artfultea.com/blogs/101/types-of-tea-a-comprehensive-guide" target="_blank" class="blogbtn">Read More</a>
+                </div>
+    
+                <img id="img blog2" src="images/blog1.png">
+
+            </div>
+
+            <div class="frame blog3">
+                <div class="blogdetails">
+                    <h2><span class="blogfont">Unraveling the Bubble Tea Mystery: A Taste Adventure Awaits!</span></h2>
+                    <p>Dive into the Bubble Tea Phenomenon. From the first sip of creamy milk tea to the delightful chewiness of tapioca pearls, discover the captivating origins and irresistible allure of bubble tea. Click to explore the enchanting world of this extraordinary beverage!</p>
+                    <a href="https://www.thedailymeal.com/1292388/origins-bubble-tea-steeped-mystery/" target="_blank" class="blogbtn">Read More</a>
+                </div>
+    
+                <img id="img blog3" src="images/types_of_tea.jpg" alt="Tea">
+
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="contactus" id="contactus">
+        <div>
+
+        </div>
+        <div>
+            <div class="title" ><h3><span class="boldfont">Get in Touch with Us</span></h3></div>
+            <div class="content" id="contact-content">
+                <!-- <img src="#" alt="" > -->
+                <div id="contact">
+                    <h4><span class="boldfont">Contact Us</span></h4><br>
+                    <ul class="mainlist">
+                        <li class="listlabel">Email</li>
+                            <li class="sublist">sereniteatea12@gmail.com</li><br>
+                        <li class="listlabel">Cellphone Number</li>
+                            <li class="sublist">09123456789</li>
+                            <li class="sublist">09987654321</li><br>
+                        <li class="listlabel">Main Office</li>
+                            <li class="sublist">Blk 5 Lot 7 Cambridge Subdivision, <br> Barangay Iponan CDOC</li>
+                    </ul>
+                </div>
+                <div id="socials">
+                    <h4><span class="boldfont">Our Socials</span></h4><br>
+                    <ul class="mainlist">
+                        <a href="https://www.instagram.com/serenitea_cdo/" target="_blank"><i><img src="images/instagram.png" class="contactslogo"></i>
+                        <li class="sublist">@SereniteaCDO</li></a><br>
+                        <a href="https://www.facebook.com/sereniteacdo"target="_blank"><i><img src="images/facebook.png" class="contactslogo"></i>
+                        <li class="sublist">SereniteaCDO</li></a><br>
+                        <a href="https://twitter.com/taylorswift13"target="_blank"><i><img src="images/twitter.png" class="contactslogo"></i>
+                        <li class="sublist">@SereniteaCDO</li></a><br>
+                    </ul>
+                </div>
+                <div id="form">
+                    <h4><span class="boldfont">Want to share your<br>experience?</span></h4><br>
+                    <form action="">
+                        <input type="text" id="uname" name="uname" placeholder="Enter Name *"><br>
+                        <input type="text" name="email" id="email" placeholder="Enter Email *"><br>
+                        <!-- <input type="text" name="message" id="message" placeholder="Send us a message!"><br> -->
+                        <!-- <input type="button" value="Message Us"><br> -->
+                        <button id="formbutton"><a id="formbutton" href="contactus.html" target="_blank">Message Us</a></button>
+                    </form>
+                    <!-- <a class="messageusbtn" href="contactus.html" target="_blank">Message Us</a> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footercontent">
+            <p>Design and Development By: Tabasan & Tapongot</p>
+            <p>Alll Rights Reserved &COPY; 2023</p>
+        </div>
+    </footer>
+
+</body>
+</html>
